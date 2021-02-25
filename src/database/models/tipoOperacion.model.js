@@ -9,6 +9,7 @@ const tipo_operacion = sequelize.define('tipo_operacion', {
    },
    {
     timestamps: false,
+    freezeTableName: true
    })
 
 

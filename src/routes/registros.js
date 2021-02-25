@@ -32,7 +32,7 @@ router.post('/newRegister', (req, res) => {
   
 });
 //Creo un nuevo registro
-router.delete('/:id', (req, res) => {
+router.delete('/delete/:id', (req, res) => {
 
     RegisterController.deleteRegister(req,res)
   
