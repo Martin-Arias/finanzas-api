@@ -31,12 +31,19 @@ router.post('/newRegister', (req, res) => {
     RegisterController.createRegister(req,res);
   
 });
-//Creo un nuevo registro
+//Elimino un registro
 router.delete('/delete/:id', (req, res) => {
 
-    RegisterController.deleteRegister(req,res)
+    RegisterController.deleteRegister(req,res);
   
 });
+
+//Actualizo un registro
+
+router.put('/update', (req,res) => {
+
+    RegisterController.updateRegister(req,res);
+})
 
 
 
