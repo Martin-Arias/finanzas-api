@@ -17,7 +17,11 @@ app.use(express.json());
 
 //Routes
 const itemsRouter = require('../src/routes/registros');
+const usersRouter = require('../src/routes/users');
+
 app.use('/api', itemsRouter);
+
+app.use('/api/users', usersRouter);
 
 
 //Server initialization

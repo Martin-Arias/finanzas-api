@@ -7,6 +7,7 @@ const Registro = sequelize.define('registros', {
     concepto: Sequelize.STRING,
     monto: Sequelize.STRING, 
     id_tipo: Sequelize.SMALLINT,
+    id_usuario: Sequelize.SMALLINT,
     createdAt:Sequelize.DATE,
     updatedAt:Sequelize.DATE
   })
